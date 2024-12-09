@@ -1,0 +1,256 @@
+.center-index {
+    width: 40%;
+    height: 30%;
+    /* background-color: rgb(138, 138, 138); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.corner-index {
+    width: 27%;
+    height: 10%;
+    /* background-color: rgb(138, 138, 138); */
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-text {
+    color: white;
+    font-size: 50px;
+    font-family: "Times New Roman", serif;
+}
+
+.corner-text {
+    color: white;
+    font-size: 15px;
+}
+
+.home-box {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.page-box {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.center-about {
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.text-about {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-img {
+    position: absolute;
+    width: 18%;
+    left: 10%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.box1-about {
+    width: 12%;
+    height: 8%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    align-items: center;
+
+}
+
+.box2-about {
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    background-color: rgb(138, 138, 138);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3-about {
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    top: 47%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    align-items: center;
+}
+
+.box4-about {
+    width: 25%;
+    height: 40%;
+    padding: 10px;
+    background-color: rgb(138, 138, 138);
+    position: absolute;
+    top: 77%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-rows {
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+    height: 28vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.exp-rows a {
+    display: block;
+}
+
+.exp-rows img {
+    width: auto;
+    height: 100%;
+    max-height: 28vh;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.exp-rows img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.exp-box {
+    width: 50%;
+}
+
+.exp-big {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.exp-small {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.contact-rect {
+    display: flex;
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center; 
+}
+
+.contact-title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    top: -95%;
+    left: 50%;
+    width: 50%;
+    margin: 200px auto;
+}
+
+.skewed {
+    transform: skew(-45deg, 45deg);
+}
+
+.row {
+    width: 170%;
+    height: 130px;
+    margin-top: 16px;
+}
+
+.image-wrap {
+    margin: 12px;
+    width: 20%;
+    height: 220%;
+    border: 20px;
+    overflow: hidden;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(10%);
+}
