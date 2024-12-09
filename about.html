@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Cabeçalho padrão -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -10,12 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Barra de navegação utilizando Bootstrap -->
     <nav class="navbar bg-dark">
         <form class="container-fluid justify-content-space-around">
-            <div class="home-box">
+            <div class="home-box"> <!-- Home -->
                 <a href="index.html" class="btn btn-outline-light me-2" type="button">Home</a>
             </div>
-            <div class="page-box">
+            <div class="page-box"> <!-- Outras páginas -->
                 <a href="about.html" class="btn btn-sm btn-outline-light ms-2" type="button">Sobre mim</a>
                 <a href="experience.html" class="btn btn-sm btn-outline-light ms-2" type="button">Experiência</a>
                 <a href="contact.html" class="btn btn-sm btn-outline-light ms-2" type="button">Contato</a>
@@ -26,22 +28,42 @@
 </head>
 <body>
     <div>
-        <img src="bgabout.jpeg" class="bg-image">
-        <div class="about-img"> <img src="maria.jpeg"> </div>
+        <img src="assets/bgabout.jpeg" class="bg-image"> <!-- Background -->
+        <div class="about-img"> <img src="assets/maria.jpeg"> </div> <!-- Foto minha -->
+        <div class="about-kd"> <img src="assets/kidney.jpeg"> </div> <!-- ... e do meu rato -->
+        <!-- divs guardando os textos da página -->
         <div class="center-about">
             <p class="box-text">Sobre mim</p>
         </div>
-        <div class="box1-about">
-            <p class="text-about">Quem sou eu?</p>
-        </div>
         <div class="box2-about">
-            <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-        </div>
-        <div class="box3-about">
-            <p class="text-about">Trajetória</p>
+            <p class="text-about">QUEM SOU EU?</p>
+            <p class="text-about">Olá, eu sou a Maria Clara! 
+                Estudo cinema e audiovisual e moro em São Paulo com o meu ratinho chamado Kidney Wallace. Uso da minha paixão e das minhas habilidades para criar produtos audiovisuais. 
+                Caso se interesse pelo meu trabalho, por favor sinta-se a vontade de <a href="contact.html" class="text-about">me contatar!</a></p>
+                <!-- href na palavra que leva à página contato -->
         </div>
         <div class="box4-about">
-            <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="text-about">CURSOS</p>
+            <p class="text-about">TOEFL iBT - Nota 110/120
+                (03/12/2022)
+                </p>
+            <p class="text-about">Digital Design Intensive - Vancouver Film School 
+                (07/01/2020 - 20/01/2020)
+                </p>
+            <p class="text-about">Introdução ao Cinema - produtora Kinopus
+                (08/08/2022 - 16/12/2022) 
+                </p>
+            <p class="text-about">Espanhol Nível 1 Presencial - UEL (2024)
+            </p>
+        </div>
+        <div class="box5-about">
+            <p class="text-about">FORMAÇÃO</p>
+            <p class="text-about">St James' International School - Bilingual Education
+                Londrina - Ensino Médio completo
+                Ano de Conclusão: 2022</p>
+            <p class="text-about">ESPM Cinema e Audiovisual -  graduação
+                São Paulo 
+                (em andamento)</p>
         </div>
     </div>
 
@@ -50,4 +72,10 @@
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
+<!-- Rodapé -->
+<footer class="text-center p-3 foot">
+    <p>CONTATO <br> angelarrochistaa@gmail.com</p> 
+    <p><strong>&copy; 2024 - Todos os direitos reservados.</strong></p>
+</footer>
 </html>

@@ -1,152 +1,169 @@
+body {
+    /* Determina a fonte padrão do site*/
+    font-family: "Times New Roman", serif;
+    color: white;
+    /* Remove as scrollbars das páginas */
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Título da home <Maria Clara de Almeida>*/
 .center-index {
     width: 40%;
     height: 30%;
-    /* background-color: rgb(138, 138, 138); */
+    /* position: absolute fixa a posição da componente
+       absolutamente em relação a toda a tela */
     position: absolute;
+    /* top e left posicionam o canto superior esquerdo
+       da componente no centro da tela */
     top: 50%;
     left: 50%;
+    /* transform posiciona o centro da componente no local
+       onde estava o canto superior esquerdo anteriormente */
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* Técnica utilizada ao decorrer do projeto */
   }
 
+/* Configurações do título da home */
+.box-text {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Botões que substituem a navbar na home */
 .corner-index {
     width: 27%;
     height: 10%;
-    /* background-color: rgb(138, 138, 138); */
     position: absolute;
     top: 85%;
     left: 85%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.box-text {
-    color: white;
-    font-size: 50px;
-    font-family: "Times New Roman", serif;
-}
-
-.corner-text {
-    color: white;
-    font-size: 15px;
-}
-
+/* Guarda o botão home na navbar */
 .home-box {
     width: 10%;
     display: flex;
     align-items: center;
 }
 
+/* Guarda os outros botões na navbar */
 .page-box {
     width: 90%;
+    /* Utiliza uma flex box para organizar
+       os elementos no canto direito da tela */
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
+/* Título da página <Sobre Mim> */
 .center-about {
     width: 30%;
     height: 15%;
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 17%;
+    left: 13%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
 
+/* Controla o texto (não título) da página sobre mim */
 .text-about {
     color: white;
     font-size: 20px;
     text-align: center;
 }
 
+/* Guarda a foto principal na página sobre mim */
 .about-img {
     position: absolute;
     width: 18%;
-    left: 10%;
-    top: 62%;
+    left: 13%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
+/* Guarda a foto do Kidney na página sobre mim */
+.about-kd {
+    position: absolute;
+    width: 8%;
+    left: 20%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+/* Configurações das imagens da página sobre mim */
 .about-img img {
     width: 100%;
+    /* height: auto mantém a razão
+       proporcional da imagem */
     height: auto;
+    /* Arredondando a borda da imagem
+       para estilização da página */
+    border-radius: 20px;
 }
 
-.box1-about {
-    width: 12%;
-    height: 8%;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    background-color: rgb(73, 73, 73);
-    align-items: center;
-
+.about-kd img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
+/* Caixa de texto <QUEM SOU EU?> */
 .box2-about {
-    width: 40%;
-    height: 40%;
+    width: 25%;
+    height: 50%;
     padding: 10px;
-    background-color: rgb(138, 138, 138);
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 36%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.box3-about {
-    width: 20%;
-    height: 15%;
-    position: absolute;
-    top: 47%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    background-color: rgb(73, 73, 73);
-    align-items: center;
-}
-
+/* Caixa de texto <CURSOS> */
 .box4-about {
     width: 25%;
-    height: 40%;
+    height: 50%;
     padding: 10px;
-    background-color: rgb(138, 138, 138);
     position: absolute;
-    top: 77%;
-    left: 80%;
+    top: 50%;
+    left: 85%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+/* Caixa de texto <FORMAÇÃO> */
+.box5-about {
+    width: 25%;
+    height: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+/* Guarda as fotos e descrições usadas
+   na página <Experiência> */
 .exp-rows {
+    /* Para separar as linhas */
     margin-top: 10px;
     display: flex;
+    /* Posição relativa para que cada uma seja
+       posicionada em sua devida linha */
     position: relative;
     left: 50%;
+    /* Não precisamos transformar o eixo y,
+       já é determinado pelo posicionamento de cada linha*/
     transform: translate(-50%, 0);
     width: 50%;
+    /* 28vh ocupa aproximadamente 28% da tela */
     height: 28vh;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
 
+/* Organiza as hrefs nas imagens corretamente */
 .exp-rows a {
     display: block;
 }
@@ -155,30 +172,39 @@
     width: auto;
     height: 100%;
     max-height: 28vh;
+    /* Efeito para perceber que a imagem é clicável */
     transition: transform 0.3s, opacity 0.3s;
 }
 
+/* Aparece quando o mouse sobrepõe a imagem */
 .exp-rows img:hover {
+    /* transform: scale aumenta seu tamanho */
     transform: scale(1.05);
+    /* Diminui a opacidade da imagem para 90% */
     opacity: 0.9;
 }
 
+/* Guarda separadamente cada elemento das exp-rows */
 .exp-box {
+    /* Temos 2 elementos, logo, o tamanho de
+       cada um é metade da linha */
     width: 50%;
 }
 
+/* Configurações do texto título da página experiência*/
 .exp-big {
     font-size: 35px;
     text-align: center;
-    color: white;
 }
 
+/* Configurações do texto comum da página experiência */
 .exp-small {
     font-size: 15px;
     text-align: center;
-    color: white;
 }
 
+/* Guarda o título <CONTATE-ME>
+   (Não se usa próclise no começo de frase) */
 .contact-rect {
     display: flex;
     width: 50%;
@@ -191,12 +217,13 @@
     justify-content: center; 
 }
 
+/* Configura o título do contato */
 .contact-title {
-    color: white;
     font-size: 50px;
     text-align: center;
 }
 
+/* Guarda as informações da página contato */
 .contact-info {
     width: 40%;
     height: 20%;
@@ -206,6 +233,7 @@
     transform: translate(-50%, -50%);
 }
 
+/* Cada linha de informações de contato separadamente */
 .info {
     position: relative;
     display: flex;
@@ -213,6 +241,7 @@
     align-items: center;
 }
 
+/* Componente principal da página imangens */
 .container {
     position: absolute;
     top: -95%;
@@ -221,16 +250,20 @@
     margin: 200px auto;
 }
 
+/* Distorce as imagens em 45° para cada direção,
+   resultando em uma rotação de 45° */
 .skewed {
     transform: skew(-45deg, 45deg);
 }
 
+/* Controla as fileiras de imagens na página imagens */
 .row {
     width: 170%;
     height: 130px;
     margin-top: 16px;
 }
 
+/* Guarda cada imagem separadamente */
 .image-wrap {
     margin: 12px;
     width: 20%;
@@ -239,18 +272,46 @@
     overflow: hidden;
 }
 
+/* Garante que cada imagem tenha sua escala
+   consistente com a original */
 .image-wrap img {
     width: 100%;
     height: 100%;
 }
 
+/* Controla as configurações de todas as
+   imagens de background do site */
 .bg-image {
     position: absolute;
+    /* top e left 0 mantêm a imagem ancorada no
+       canto superior esquerdo da tela */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    /* Garante que as imagens se estendam por toda a tela */
     object-fit: cover;
+    /* Garante que as imagens estejam atrás de
+       todas as outras componentes */
     z-index: -1;
+    /* Abaixa a luminosidade das imagens para 10%
+       para que haja uma legibilidade no site*/
     filter: brightness(10%);
+}
+
+/* Controla o footer genérico das páginas no site */
+.foot {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Reposiciona o footer na página experiência
+   pois seu layout não encaixa com o padrão. */
+.foot-exp {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
 }

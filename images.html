@@ -11,7 +11,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="height: 100%; overflow: hidden;">
+<body>
   <nav class="navbar bg-dark fixed-top">
     <form class="container-fluid justify-content-space-around">
         <div class="home-box">
@@ -26,25 +26,27 @@
     </form>
   </nav> 
     <div>
-        <div class="container z-index-0">
-            <div class="skewed">
-              <div class="row">
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
-                <div class="image-wrap"><img src="placeholder.jpeg"></div>
+        <div class="container z-index-0"> <!-- div que guarda a grade de fotos -->
+        <!-- z-index mantém a página abaixo da navbar -->
+            <div class="skewed"> <!-- div que rotaciona as fotos em 45° -->
+              <div class="row"> <!-- div que guarda as fotos em linhas-->
+                <!-- Utilizamos apenas uma row pois as imagens possuem efeito de wrapping automático -->
+                <div class="image-wrap"><img src="assets/img01.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img02.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img07.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img08.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img09.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img01.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img02.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img03.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img04.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img05.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img06.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img03.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img04.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img09.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img05.jpeg"></div>
+                <div class="image-wrap"><img src="assets/img06.jpeg"></div>
               </div>
             </div>
           </div>
@@ -55,4 +57,9 @@
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+<!-- Rodapé -->
+<footer class="text-center p-3 foot">
+  <p>CONTATO <br> angelarrochistaa@gmail.com</p> 
+  <p><strong>&copy; 2024 - Todos os direitos reservados.</strong></p>
+</footer>
 </html>
